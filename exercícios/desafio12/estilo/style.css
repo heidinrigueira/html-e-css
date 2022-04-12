@@ -1,5 +1,17 @@
 @charset  'UTF-8';
 
+@import url('https://fonts.googleapis.com/css2? family= Passion+One & display=swap');
+font-family: 'Passion One', cursive;
+
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & display=swap');
+font-family: 'Sriracha', cursive;
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma , 'sans-serif';
+    --fonte2: 'Pasion One', cursive;
+    --fonte3:  'Sriracha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,6 +19,7 @@
 html, boby {
     min-height: 100%;
     background-color: darkgray;
+    font-family:Verdana, Geneva, Tahoma , 'sans-serif';
 }
 header {
     background-color: black;
@@ -16,7 +29,10 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;  
-}header > p {
+    font-family:  'Pasion One', cursive;
+    font-size: 6vw ;
+}
+header > p {
     padding-bottom: 50%;
 }
 header a, footer a {
@@ -32,6 +48,8 @@ section {
     padding-bottom: 10%;
     line-height: 2em ;
     padding-left: 30px;
+    font-family: 'Sriracha', cursive;
+    font-size: 3vw;
 }
 section.normal {
     background-color: white;
@@ -42,7 +60,8 @@ section.imagem {
     color: white;
 }
 section.imagem > p {
-    width: 400px ;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 footer {
