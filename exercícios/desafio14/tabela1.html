@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,80 +8,99 @@
     <title>Desafio 14</title>
     <style>
         body {
-            font-family:Arial, Helvetica, sans-serif;
-         }
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         table {
             border-collapse: collapse;
-         }
-         caption {
-             font-size: 1.3em;
-             font-weight: bolder;
-             padding: 10px;
-         }
-         th, td {
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        th,
+        td {
             border: 2px solid gray;
             padding: 10px;
-         }
-         
+        }
+
+        .style>th,
+        .style>td {
+            background-color: gray;
+            color: #fff;
+            font-weight: bolder;
+            border: 2px solid #000;
+        }
+
+        .text-center {
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <h1>Tabela Completa</h1>
     <table>
-        <tr>
+        <tr class="style">
             <th rowspan="2">Área</th>
             <th rowspan="2">Disciplinas</th>
             <th colspan="2" scope="colgroup">Notas</th>
-            <th scope="col">Nota 1</th>
-            <th scope="col">Nota 2</th>
-            <th rowspan="2" scope="col">Média</th>
+            <th rowspan="2">Média</th>
+        </tr>
+        <tr class="style">
+            <th>Nota 1</th>
+            <th>Nota 2</th>
         </tr>
         <tr>
-            <th rowspan="4" scope="rowgroup">Exatas</th>
-            <td>Matemática</td> 
-            <td>8.5</td> 
-            <td>8.0</td>
-            <td>8.25</td>
+            <th rowspan="4">Exatas</th>
+            <td>Matemática</td>
+            <td class="text-center">8.5</td>
+            <td class="text-center">8.0</td>
+            <td class="text-center">8.25</td>
         </tr>
         <tr>
-            <td>Física</td> 
-            <td>8.0</td> 
-            <td>8.0</td>
-            <td>8.0</td>
+            <td>Física</td>
+            <td class="text-center">8.0</td>
+            <td class="text-center">8.0</td>
+            <td class="text-center">8.0</td>
         </tr>
         <tr>
             <td>Química</td>
-            <td>9.5</td> 
-            <td>8.0</td>
-            <td>9.25</td>
+            <td class="text-center">9.5</td>
+            <td class="text-center">8.0</td>
+            <td class="text-center">9.25</td>
         </tr>
         <tr>
             <td>Biologia</td>
-            <td>6.5</td> 
-            <td>8.0</td>
-            <td>7.25</td>
+            <td class="text-center">6.5</td>
+            <td class="text-center">8.0</td>
+            <td class="text-center">7.25</td>
+        </tr>
+        <tr class="style">
+            <th colspan="4" style="text-align: left;">Média de Exatas</th>
+            <td class="text-center">8.0</td>
         </tr>
         <tr>
-            <th colspan="4" scope="row">Média de Exatas</th>
-            <td>8.0</td>
-        </tr>
-        <tr>
-            <th rowspan="2" scope="rowgroup">Humanas</th>
+            <th rowspan="2">Humanas</th>
             <td>História</td>
-            <td>7.5</td> 
-            <td>8.0</td>
-            <td>7.25</td>
-        </tr>   
+            <td class="text-center">7.5</td>
+            <td class="text-center">8.0</td>
+            <td class="text-center">7.25</td>
+        </tr>
         <tr>
             <td>Geográfia</td>
-            <td>6.75</td> 
-            <td>7.5</td>
-            <td>7.0</td>
+            <td class="text-center">6.75</td>
+            <td class="text-center">7.5</td>
+            <td class="text-center">7.0</td>
         </tr>
-        <tr>
-            <th colspan="4" scope="row">Média de Humanas</th>
-            <td>7.0</td>
+        <tr class="style">
+            <th colspan="4" style="text-align: left;">Média de Humanas</th>
+            <td class="text-center">7.0</td>
         </tr>
     </table>
 </body>
+
 </html>
