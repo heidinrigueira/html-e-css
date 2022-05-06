@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+         }
+        table {
+            border-collapse: separate;
+         }
+         caption {
+             font-size: 1.3em;
+             font-weight: bolder;
+             padding: 10px;
+         }
+         th, td {
+            border: 3px solid rgb(0, 0, 0);
+            padding: 10px;
+         }
+         .cor {
+             background-color: chartreuse;
+         }
+         .cor1 {
+             background-color: gold;
+         }
+         .cor2 {
+             background-color: coral;
+         }
+         col.chomens {
+             background-color: aqua;
+         }
+         col.cmulheres {
+             background-color: rgb(1, 184, 184);
+         }
+         col.cprofessor {
+             background-color: aquamarine;
+         }
+    </style>
+</head>
+<body>
+    <h1>Exercitando Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="chomens">
+            <col class="cmulheres">
+            <col class="cprofessor">   
+        </colgroup>
+        <caption>
+            Estudo
+        </caption>
+        <tr>
+            <th scope="row" rowspan="2" colspan="2" class="cor1">Grupos</th>
+            <th scope="colgroup" colspan="4" class="cor2">Demográfico</th>
+        </tr>
+        <tr>
+            <th scope="col">Homens</th>
+            <th scope="col">Mulheres</th>
+            <th scope="col">Professor</th>
+        </tr>
+        <tr>
+            <th scope="rowgroup"  rowspan="5" class="cor1">Turmas</th>       
+        <tr> 
+            <th scope="row" class="cor">A</th>           
+            <td>20</td> 
+            <td>05</td>
+            <td>João Pedro</td>   
+        </tr>
+        <tr>
+            <th scope="row" class="cor">B</th>   
+            <td>21</td>
+            <td>03</td>
+            <td>Augusto</td>
+        </tr>
+        <tr>
+            <th scope="row" class="cor">C</th>   
+            <td>25</td>
+            <td>12</td>
+            <td>Ana Maria</td>
+        </tr>
+        <tr>
+            <th scope="row" class="cor">D</th>    
+            <td>20</td>
+            <td>16</td>
+            <td>Patrícia</td>
+        </tr>
+        <tr>
+            <th colspan="2" class="cor1">Total</th>
+            <td>86</td>
+            <td>36</td>
+            <td>4</td>
+        </tr>
+        
+    </table>
+    
+</body>
+</html>
