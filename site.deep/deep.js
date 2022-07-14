@@ -1,3 +1,3 @@
-function pagina(){
+function galeria(){
     
 }
