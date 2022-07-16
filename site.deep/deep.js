@@ -1,3 +1,3 @@
-function interface(){
-    document.getElementById(`interface`)
+function home() {
+    document.getElementById(`home`)
 }

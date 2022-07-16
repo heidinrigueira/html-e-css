@@ -134,7 +134,7 @@ ul#album-de-fotos li span {
 }
 
 ul#album-de-fotos li:hover {
-    -webkit-transform: scale(1.5);
+    -webkit-transform: scale(2);
 
 }
 
