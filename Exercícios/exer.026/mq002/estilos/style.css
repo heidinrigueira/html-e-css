@@ -2,3 +2,23 @@
 
 /*Media Query para todo site
 configurações gerais*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(32, 32, 254, 0.945);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color:snow;
+    text-shadow: 2px 2px 0px rgba(17, 17, 155, 0.945);
+    padding: 10px;
+}
