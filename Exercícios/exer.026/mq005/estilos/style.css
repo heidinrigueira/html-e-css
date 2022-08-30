@@ -21,7 +21,7 @@ header > h1 {
 }
 
 menu {
-   display: block;
+   display: none;
 }
 
 menu > ul {
@@ -41,6 +41,20 @@ menu > ul > li > a {
 menu > ul > li > a:hover {
    background-color: rgb(138, 136, 136);
 }
+
+span#burguer {
+   background-color: rgb(59, 58, 58) ;
+   color: white;
+   display: block;
+   text-align: center;
+   padding: 10px;
+}
+
+span#burguer:hover{
+   background-color:rgb(215, 214, 214) ;
+   color: rgb(58, 58, 58);
+}
+
 main {
    width: 90vw;
    background-color: white;
